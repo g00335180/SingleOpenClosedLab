@@ -1,3 +1,10 @@
+/*
+Name: Meghan Fitzgerald
+Date: 25/03/2020
+Contact: G00335180@gmit.ie
+Comments: Design Principles lab where we explored how to use 2 of the SOLID Principles, Single and Open.
+ */
+
 package ie.gmit.open;
 
 import java.time.LocalDateTime;
@@ -12,9 +19,7 @@ public class InternetSessionHistory {
     public static class InternetSession {
         
         private LocalDateTime begin;
-
         private Long subscriberId;
-
         private Long dataUsed;
         
         public InternetSession(Long subscriberId, LocalDateTime begin, long dataUsed) {
@@ -23,23 +28,14 @@ public class InternetSessionHistory {
             this.subscriberId = subscriberId;
         }
 
-        /**
-         * @return the begin
-         */
         public LocalDateTime getBegin() {
             return begin;
         }
 
-        /**
-         * @return the data used
-         */
         public long getDataUsed() {
             return dataUsed;
         }
 
-        /**
-         * @return the subscriber
-         */
         public Long getSubscriberId() {
             return subscriberId;
         }
